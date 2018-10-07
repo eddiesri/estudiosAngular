@@ -1,0 +1,74 @@
+<!-- The content below is only a placeholder and can be replaced.
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+-->
+<!--------------------- Clase de Componentes --------------------------------->
+<!-- Clase de ngIf -->
+<!--  <app-cabecera></app-cabecera>
+
+<app-footer></app-footer> -->
+
+<!--------------------- Clase de ngIf --------------------------------->
+<!-- <h1 class="container bg-dark text-white text-center my-4 py-4">ngif show={{show}}</h1>
+<div class="container">
+  <button class="btn btn-warning" (click)="show=!show">Action</button>
+  <p class="text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, minus ex quibusdam corporis nulla officiis quisquam! Voluptate, distinctio quo officiis modi laboriosam adipisci dignissimos labore ea nihil eius quasi eum.</p>
+  <ng-template #showDos>
+      <p class="text-danger">Harum qui provident reprehenderit ad blanditiis. Incidunt ea labore facilis provident laboriosam repudiandae accusamus excepturi nihil reprehenderit, id quo laborum ipsum alias vero corporis beatae voluptatibus, maiores ipsa, quam dicta?</p>
+
+  </ng-template>
+</div> -->
+<!--------------------- Clase de ngClass  --------------------------------->
+<!-- <h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+<div class="container">
+  <button class="btn btn-dark mb-3" (click)= "activo='First'" >First</button>
+  <button class="btn btn-danger mb-3" (click)= "activo='Second'">Second</button>
+  <p class="text-info   d-none" [ngClass] ="{'d-block':activo =='First'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, minus ex quibusdam corporis nulla officiis quisquam! Voluptate, distinctio quo officiis modi laboriosam adipisci dignissimos labore ea nihil eius quasi eum.</p>
+  <p class="text-danger d-none" [ngClass] ="{'d-block':activo =='Second'}">Harum qui provident reprehenderit ad blanditiis. Incidunt ea labore facilis provident laboriosam repudiandae accusamus excepturi nihil reprehenderit, id quo laborum ipsum alias vero corporis beatae voluptatibus, maiores ipsa, quam dicta?</p>
+
+
+</div> -->
+
+<!--------------------- Clase de ngFor --------------------------------->
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+<div class="container">
+<!--   <ul>
+    <li *ngFor="let curso of cursos">{{curso}}</li>
+  </ul> -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">TYPE</th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animales; index as i">
+        <th scope="row">{{i}}</th>
+        <td>{{animal.tipo}}</td>
+        <td>{{animal.nombre}}</td>
+        <td>{{animal.edad}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,12 @@
+<h1>
+  nosotros works!
+</h1>
+
+<ul class="list-group">
+    <li *ngFor="let item of equipo index as i" class="list-group-item">
+      <h6>{{item.nombre}}</h6> 
+      <h6> {{item.especialidad}}</h6>
+      <a [routerLink]="['/equipo',i,item.nombre]">Leer Más</a>
+      <!-- Nota: si quiero pasar más parametros sería de la siguiente forma: [routerLink]="['/editModeloAviso',estrut.idAvisoEstrutura,'VIEW'] -->
+    </li>
+  </ul>
